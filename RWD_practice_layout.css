@@ -1,0 +1,148 @@
+
+    
+.flexview{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    font-size: 20px;
+}
+.right{
+    display:flex;
+    justify-content: flex-end;
+    flex:auto;
+}
+.right__item{
+    flex: none;
+    margin-right: 15px;
+    font-size: 20px;
+
+}
+
+.intro{
+    background-color: rgb(198, 228, 237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 250px;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    
+}
+.list__promo{
+    display: flex;
+    width: 1200px;
+
+}
+.list__promo__item{
+    display: flex;
+    flex:auto;
+    width: 33.33%;
+    margin: 10px;
+    background-color: rgb(168, 194, 201);
+}
+.list__promo__item__pic{
+    width: 80px;
+    height: 50px;
+}
+.list__promo__item__word{
+    display: flex;
+    align-items: center;
+}
+
+.list__promo__item__word__cont{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.list__1{
+    display: flex;
+    width: 1200px;
+}
+
+.list__1__left{
+    flex:auto;
+    width: 33.33%;
+    height: 250px;
+    margin: 10px;
+    background-image: url('IMG_6443.jpeg');
+    background-size: cover;
+    background-position: 45%;
+}
+
+.list__1__right{
+    flex:auto;
+    display: flex;
+    height: 250px;
+    margin: 10px;
+    width: 33.33%;
+    gap: 20px;
+}
+.list__1__right__item{
+    width: 50%;
+    background-image: url('IMG_6443.jpeg');
+    background-size: cover;
+    background-position: 45%;
+}
+
+.list__1__right__item__star{
+    float: right;
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top:5px;
+    right: 10px;
+    opacity: 0.5;
+}
+.list__1__title{
+    background-color: hsl(0, 0%, 100%,0.7);
+    text-align: center;
+    position: relative;
+    top: 89%;
+    font-size: 20px;
+}   
+
+.list__1__right__down{
+    flex:auto;
+    display: flex;
+    height: 250px;
+    margin: 10px;
+    width: 33.33%;
+    gap: 20px;
+}
+
+
+
+
+@media(max-width:1200px){
+    
+    .list__promo{
+        flex-wrap: wrap;
+    }
+    .list__promo__item{
+        width: 45%;
+    }
+    .list__1{
+        flex-wrap: wrap;
+    }
+    .list__1__left{
+        width:22.5%;
+    }
+    .list__1__right{
+        width: 35%;
+    }
+       
+
+ 
+
+}
+
+
