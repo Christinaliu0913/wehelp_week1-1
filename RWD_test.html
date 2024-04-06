@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width-device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>week1_RWD</title>
+        <link rel="stylesheet" type='text/css' href="/Users/wen/Documents/GitHub/wehelp_week1/RWD_test.css">
+    </head>
+    <body>
+        <nav>
+            <div class="flexview">
+                <div class="menu__left">My Website</div>
+                <div class="menu__right">
+                    <div class="right__item">Item1</div>
+                    <div class="right__item">Item2</div>
+                    <div class="right__item">Item3</div>
+                    <div class="right__item">Item4</div>
+                </div>
+               
+                <div  class="menu__mobile">
+                    <img onclick="showSidebar()" src="icons8-menu.svg" width="30" height="30">
+                      
+                <div> 
+                 <div class="sidebar">
+                    <div onclick="hideSidebar()"><img class='cancel' src="x.png" width="30" height="30"></div>
+                    <div class="right__item">Item1</div>
+                    <div class="right__item">Item2</div>
+                    <div class="right__item">Item3</div>
+                    <div class="right__item">Item4</div>
+                </div> 
+            </div>
+        </nav>
+
+
+        <div class="intro">Welcome to MyHome</div>
+
+        <div class="list">
+            <div class="list__promo">
+                <div class="list__promo__item">
+                    <img class="list__promo__item__pic" src="IMG_6443.jpeg">
+                    <div class="list__promo__item__word">
+                        <div class="list__promo__item__word__cont">Promotion1</div>
+                    </div>
+                </div>
+                <div class="list__promo__item">
+                    <img class="list__promo__item__pic" src="IMG_6443.jpeg">
+                    <div class="list__promo__item__word">
+                        <div class="list__promo__item__word__cont">Promotion2</div>
+                    </div>
+                </div>
+                <div class="list__promo__item">
+                    <img class="list__promo__item__pic" src="IMG_6443.jpeg">
+                    <div class="list__promo__item__word">
+                        <div class="list__promo__item__word__cont">Promotion3</div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+
+        <div class="list">
+            <div class="list__1">
+                <div class="list__1__left">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">
+                        Title1
+                    </div>
+                </div>
+                <div class="list__1__right">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">Title2</div>
+                </div>
+
+                <div class="list__1__right">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">Title3</div>
+                </div>
+                <div class="list__1__right">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">Title4</div>
+                </div>
+                <div class="list__1__right">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">Title5</div>
+                </div>
+                <div class="list__1__left">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">
+                        Title6
+                    </div>
+                </div>
+                <div class="list__1__right">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">Title7</div>
+                </div>
+
+                <div class="list__1__right">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">Title8</div>
+                </div>
+                <div class="list__1__right">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">Title9</div>
+                </div>
+                <div class="list__1__right">
+                    <img class="list__1__right__item__star" src="star.png">
+                    <div class="list__1__title">Title10</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display ='flex'
+
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display ='none'
+
+            }
+        </script>
+        
+    </body>
+    
+    
+</html>
