@@ -4,7 +4,200 @@
         <meta name="viewpoint" content="width-device-width, initial-scale=1.0"/>
         <meta charset="utf-8"/>
         <title>week1_RWD</title>
-        <link rel="stylesheet" type='text/css' href="RWD_test.css">
+        <style>
+            .flexview{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.menu__left{
+    font-size: 20px;
+}
+.menu__right{
+    display:flex;
+    justify-content: flex-end;
+    flex:auto;
+}
+.right__item{
+    flex: none;
+    margin-right: 15px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+.menu__mobile{
+    justify-content: flex-end;
+    display: none;
+    flex:auto;
+    margin-right: 2.5%;
+}
+.sidebar{
+    box-shadow: -10px 0px -10px -10px rgba(0,0,0,0.5);
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 999;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.cancel{
+    float: right;
+}
+
+
+.intro{
+    background-color: rgb(198, 228, 237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 250px;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    
+}
+.list__promo{
+    display: flex;
+    width: 1200px;
+
+}
+.list__promo__item{
+    display: flex;
+    flex:auto;
+    width: 33.33%;
+    margin: 10px;
+    background-color: rgb(168, 194, 201);
+}
+.list__promo__item__pic{
+    width: 80px;
+    height: 50px;
+    background-image: url('IMG_6443.jpeg');
+}
+.list__promo__item__word{
+    display: flex;
+    align-items: center;
+}
+
+.list__promo__item__word__cont{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.list__1{
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+}
+
+.list__1__left{
+    flex:auto;
+    width: 33.33%;
+    height: 250px;
+    margin: 10px;
+    background-image: url('IMG_6443.jpeg');
+    background-size: cover;
+    background-position: 45%;
+}
+
+.list__1__right{
+    flex:auto;
+    width: 16.66%;
+    height: 250px;
+    background-image: url('IMG_6443.jpeg');
+    background-size: cover;
+    background-position: 45%;
+    margin: 10px;
+}
+
+.list__1__right__item__star{
+    float: right;
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top:5px;
+    right: 10px;
+    opacity: 0.5;
+}
+.list__1__title{
+    background-color: hsl(0, 0%, 100%,0.7);
+    text-align: center;
+    position: relative;
+    top: 89%;
+    font-size: 20px;
+}   
+
+
+@media(min-width:1200px){
+
+    .list__1{
+        flex-wrap: wrap;
+    }
+    .list__1__left{
+        width:30%;
+    }
+    .list__1__right{
+        width: 15%;
+    }
+}
+
+
+@media(max-width:1200px){
+
+    .list__promo{
+        flex-wrap: wrap;
+    }
+    .list__promo__item{
+        width: 45%;
+    }
+    .list__1{
+        flex-wrap: wrap;
+    }
+    .list__1__left{
+        width: 22%;
+    }
+    .list__1__right{
+        width: 22%;
+    }     
+
+}
+@media(max-width:600px) and (min-width:300px){
+    .menu__mobile{
+        display: flex;
+    }
+    .menu__right{
+        display: none;
+    }
+    .list__promo{
+        flex-wrap: wrap;
+    }
+    .list__promo__item{
+        width: 90%;
+    }
+    .list__1{
+        flex-wrap: wrap;
+    }
+    .list__1__left{
+        width:90%;
+    }
+    .list__1__right{
+        width: 90%;
+    }   
+    
+    
+}
+        </style>
     </head>
     <body>
         <nav>
