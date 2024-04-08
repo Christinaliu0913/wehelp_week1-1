@@ -1,5 +1,7 @@
 
-    
+.body{
+    margin:0px;
+}   
 .flexview{
     display: flex;
     align-items: center;
@@ -8,6 +10,7 @@
 
 .menu__left{
     font-size: 20px;
+    margin-left: 2% ;
 }
 .menu__right{
     display:flex;
@@ -16,7 +19,7 @@
 }
 .right__item{
     flex: none;
-    margin-right: 15px;
+    margin-right: 2%;
     font-size: 20px;
     text-align: center;
     padding: 15px;
@@ -78,6 +81,8 @@
     width: 80px;
     height: 50px;
     background-image: url('IMG_6443.jpeg');
+    background-size: cover;
+    background-position: 45%;
 }
 .list__promo__item__word{
     display: flex;
@@ -126,11 +131,13 @@
     opacity: 0.5;
 }
 .list__1__title{
+    position: relative;
+    bottom: 0;
     background-color: hsl(0, 0%, 100%,0.7);
     text-align: center;
-    position: relative;
-    top: 89%;
     font-size: 20px;
+    position: relative;
+    bottom: -89%;
 }   
 
 
